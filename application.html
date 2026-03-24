@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SywisaFlow - Plateforme de gestion de projet intelligente</title>
+    <meta name="description" content="SywisaFlow : La plateforme intelligente pour gérer vos projets, tâches et équipes.">
+    <meta name="keywords" content="gestion de projet, productivité, tâches, collaboration, équipe">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logsans.png" alt="SywisaFlow Logo">
+                <span>SywisaFlow</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#fonctionnalites" class="nav-link">Fonctionnalités</a>
+                <a href="#avantages" class="nav-link">Avantages</a>
+                <a href="#tarifs" class="nav-link">Tarifs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="#" class="btn-login" id="openLoginBtn">
+                    <i class="fas fa-user"></i> Se connecter
+                </a>
+                <a href="#" class="btn-signup" id="openSignupBtn">
+                    S'inscrire <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION ACCUEIL -->
+    <section class="hero" id="accueil">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>La nouvelle façon de gérer vos projets</span>
+                </div>
+                <h1>
+                    <span class="gradient-text-blue">Organisez.</span>
+                    <span class="gradient-text-turquoise">Simplifiez.</span><br>
+                    <span class="gradient-text-green">Réussissez.</span>
+                </h1>
+                <p class="hero-description">
+                    SywisaFlow est la plateforme tout-en-un qui transforme votre façon de travailler. Gérez vos projets, suivez vos tâches et collaborez en équipe.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Utilisateurs</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Projets</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9/5</span>
+                        <span class="stat-label">Avis</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large" id="heroSignupBtn">
+                        Commencer gratuitement
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-secondary btn-large" id="demoBtn">
+                        <i class="fas fa-play"></i>
+                        Voir la démo
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-right" data-aos="fade-left">
+                <div class="comparison-showcase">
+                    <h3 class="showcase-title">Le constat</h3>
+                    <div class="photo-comparison">
+                        <div class="photo-card photo-desordre">
+                            <img src="images/desordre.png" alt="Bureau en désordre - Avant SywisaFlow" class="comparison-photo">
+                            <div class="photo-label label-desordre">
+                                <i class="fas fa-times-circle"></i>
+                                <span>SANS SYWISAFLOW</span>
+                            </div>
+                        </div>
+                        <div class="vs-badge">VS</div>
+                        <div class="photo-card photo-solution">
+                            <img src="images/solution.png" alt="Bureau organisé - Après SywisaFlow" class="comparison-photo">
+                            <div class="photo-label label-solution">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AVEC SYWISAFLOW</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FONCTIONNALITÉS -->
+    <section class="features" id="fonctionnalites">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Fonctionnalités</span>
+                <h2>Tout ce dont vous avez besoin</h2>
+                <p>Découvrez comment SywisaFlow peut transformer votre productivité</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #0047AB, #0018d1, #00ab58);">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Gestion de projets</h3>
+                    <p>Créez et organisez vos projets avec une vue d'ensemble claire et des outils puissants.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #0047AB, #0018d1, #00ab58);">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Tâches intelligentes</h3>
+                    <p>Suivez l'avancement en temps réel avec des notifications et des rappels automatiques.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #0047AB, #0018d1, #00ab58);">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Travaillez en équipe efficacement avec des outils de communication intégrés.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #0047AB, #0018d1, #00ab58);">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Statistiques</h3>
+                    <p>Analysez vos performances avec des rapports détaillés et des graphiques intuitifs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION AVANTAGES -->
+    <section class="avantages" id="avantages">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Avantages</span>
+                <h2>Pourquoi choisir SywisaFlow ?</h2>
+                <p>Découvrez les bénéfices de notre plateforme</p>
+            </div>
+            <div class="avantages-grid">
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-clock"></i>
+                    <h3>Gain de temps</h3>
+                    <p>Automatisez vos tâches répétitives et concentrez-vous sur l'essentiel.</p>
+                </div>
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Visibilité totale</h3>
+                    <p>Ayez une vue d'ensemble sur tous vos projets en temps réel.</p>
+                </div>
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sécurité</h3>
+                    <p>Vos données sont protégées avec un chiffrement de bout en bout.</p>
+                </div>
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Accessibilité</h3>
+                    <p>Disponible sur tous vos appareils, où que vous soyez.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION TARIFS -->
+    <section class="tarifs" id="tarifs">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Tarifs</span>
+                <h2>Des offres adaptées à vos besoins</h2>
+                <p>Choisissez le plan qui vous convient</p>
+            </div>
+            <div class="tarifs-grid">
+                <div class="tarif-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Gratuit</h3>
+                    <div class="prix">0€<span>/mois</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Jusqu'à 3 projets</li>
+                        <li><i class="fas fa-check"></i> 5 membres par projet</li>
+                        <li><i class="fas fa-check"></i> Fonctionnalités de base</li>
+                        <li><i class="fas fa-check"></i> Support par email</li>
+                    </ul>
+                    <button class="btn-primary">Commencer</button>
+                </div>
+                <div class="tarif-card populaire" data-aos="fade-up" data-aos-delay="200">
+                    <div class="badge-populaire">Populaire</div>
+                    <h3>Pro</h3>
+                    <div class="prix">29€<span>/mois</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Projets illimités</li>
+                        <li><i class="fas fa-check"></i> 20 membres par projet</li>
+                        <li><i class="fas fa-check"></i> Fonctionnalités avancées</li>
+                        <li><i class="fas fa-check"></i> Support prioritaire</li>
+                    </ul>
+                    <button class="btn-primary">Choisir Pro</button>
+                </div>
+                <div class="tarif-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Entreprise</h3>
+                    <div class="prix">79€<span>/mois</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Projets illimités</li>
+                        <li><i class="fas fa-check"></i> Membres illimités</li>
+                        <li><i class="fas fa-check"></i> API dédiée</li>
+                        <li><i class="fas fa-check"></i> Support 24/7</li>
+                    </ul>
+                    <button class="btn-primary">Contactez-nous</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Contact</span>
+                <h2>Parlons de votre projet</h2>
+                <p>Une question ? Notre équipe est là pour vous répondre</p>
+            </div>
+            <div class="contact-container" data-aos="fade-up">
+                <div class="contact-info">
+                    <h3>Restons en contact</h3>
+                    <p><i class="fas fa-envelope"></i> syrine.laadhari@gmail.com </p>
+                    <p><i class="fas fa-phone"></i> +216 97 004 400</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tunis, Tunisie</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal d'inscription -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="login-box">
+                <h2>Créer un compte</h2>
+                <img src="images/logsans.png" class="logo-small" alt="Logo">
+
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nom</label>
+                            <input type="text" id="registerNom" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Prénom</label>
+                            <input type="text" id="registerPrenom" placeholder="Votre prénom" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Genre</label>
+                        <div class="genre-group">
+                            <label>
+                                <input type="radio" name="genre" value="masculin" required> Masculin
+                            </label>
+                            <label>
+                                <input type="radio" name="genre" value="feminin" required> Féminin
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="registerEmail" placeholder="votre@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mot de passe</label>
+                        <input type="password" id="registerPassword" placeholder="********" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Confirmer mot de passe</label>
+                        <input type="password" id="registerConfirmPassword" placeholder="********" required>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">J'accepte les conditions d'utilisation</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit" style="background: linear-gradient(135deg, #0047AB, #0018d1, #00ab58);">
+                        Créer mon compte
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <p class="login-link">
+                        Déjà un compte ? <a href="#" id="switchToLogin" style="color: #00ab58;">Se connecter</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de connexion -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="login-box">
+                <h2>Connexion</h2>
+                <img src="images/logsans.png" class="logo-small" alt="Logo">
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="loginEmail" placeholder="votre@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mot de passe</label>
+                        <input type="password" id="loginPassword" placeholder="********" required>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox"> Se souvenir de moi
+                        </label>
+                        <a href="#" class="forgot-password" style="color: #0047AB;">Mot de passe oublié?</a>
+                    </div>
+
+                    <button type="submit" class="btn-submit" style="background: linear-gradient(135deg, #0047AB, #0018d1, #00ab58);">
+                        Se connecter
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <p class="signup-link">
+                        Pas encore de compte ? <a href="#" id="switchToSignup" style="color: #0047AB;">S'inscrire</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
